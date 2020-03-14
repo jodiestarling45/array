@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    Insert dashes (-) between each two even digits of a specific number
+</head>
+<body>
+<input type="text" id="input">
+<input type="button" onclick="hack()" value="click this to insert dashes (-)">
+<script>
+    let array=Array()
+    let x=0;
+    function hack(){
+
+        let array=[];
+        let number=document.getElementById("input").value;
+        array=number;
+        for (let x=0;x<array.length;x++){
+            if (array[x-1]%2==0&&array[x]%2==0){
+                number.push("-")
+            }else{
+                number.push(array[x])
+            }
+        }console.log(number.join(""));
+
+    }
+</script>
+</body>
+</html>
